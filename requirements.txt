@@ -1,0 +1,19 @@
+# Core data libraries
+pandas
+numpy
+
+# NFL data source
+nfl_data_py
+
+# Machine learning & modeling
+scikit-learn
+xgboost
+
+# Visualization
+matplotlib
+seaborn
+
+# Optional (but recommended)
+jupyter                # to run notebooks easily in VS Code or Codespaces
+notebook               # notebook server backend
+tqdm                   # progress bars for loops or training
