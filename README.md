@@ -1,2 +1,2 @@
-# sports-predict
-This is a project that will use python and machine learning (ML) to generate a prediction model for sporting events. First iteration will be mainly just NFL score predictions, along with if teams will cover the spread and whether the over of under will hit. Further iterations will include other sports and potentially player prop projections.
+# NFL Prediction Model
+This is a project that will use python and machine learning (ML) to generate a prediction model for sporting events. First iteration will be mainly just NFL score predictions using historical data like yards per game (YPG), points per game (PPG), etc. The current model gets its data from the NFL Data Python module, which has been added in the requirements.txt file to import all necessary Python modules. Future iterations will involve using APIs and implementing deep learning models.
