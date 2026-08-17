@@ -1,19 +1,31 @@
-# Core data libraries
-pandas
-numpy
+# NFL prediction pipeline -- dependencies
+# Usage:
+#   conda create -n nfl-predict python=3.11 -y
+#   conda activate nfl-predict
+#   pip install -r requirements.txt
 
-# NFL data source
-nfl_data_py
+# --- Data ingestion ---
+requests>=2.31
+pandas>=2.1
+pyarrow>=14.0        # parquet read/write backend for pandas
 
-# Machine learning & modeling
-scikit-learn
-xgboost
+# --- Storage / database ---
+sqlalchemy>=2.0
+psycopg2-binary>=2.9 # Postgres driver
 
-# Visualization
-matplotlib
-seaborn
+# --- Feature engineering ---
+numpy>=1.26
 
-# Optional (but recommended)
-jupyter                # to run notebooks easily in VS Code or Codespaces
-notebook               # notebook server backend
-tqdm                   # progress bars for loops or training
+# --- Modeling ---
+scikit-learn>=1.3
+xgboost>=2.0
+lightgbm>=4.1
+
+# --- Environment / config ---
+python-dotenv>=1.0
+
+# --- Visualization (model evaluation, calibration plots) ---
+matplotlib>=3.8
+
+# --- Optional convenience wrapper for nflverse data ---
+nfl_data_py>=0.3
